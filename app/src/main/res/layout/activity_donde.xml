@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_donde"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.drn.diarioderegistro.Donde">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="1">
+
+        <TextView
+            android:text="¿A donde va?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="4dp"
+            android:id="@+id/textView"
+            android:layout_weight="0.02"
+            android:textSize="22dp"
+            />
+
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="122dp">
+
+            <Button
+                android:text="Dirección"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnDireccion"
+                android:layout_weight="0.02" />
+
+            <Button
+                android:text="Caja"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btncaja"
+                android:layout_weight="0.02"
+                android:layout_row="0"
+                android:layout_column="2" />
+
+            <Button
+                android:text="Aulas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnSubDir"
+                android:layout_weight="0.02"
+                android:layout_row="0"
+                android:layout_column="1" />
+
+            <Button
+                android:text="C Escolar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnCescolar"
+                android:layout_weight="0.02"
+                android:layout_row="1"
+                android:layout_column="0" />
+        </GridLayout>
+
+        <TextView
+            android:text="¿A donde va?"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/textView4"
+            android:layout_weight="0.02"
+            android:textSize="22dp"/>
+
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/spinner"
+            android:layout_weight="0.02"
+            android:entries="@array/items"/>
+    </LinearLayout>
+
+</RelativeLayout>
